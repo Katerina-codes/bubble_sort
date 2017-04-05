@@ -12,9 +12,14 @@ describe BubbleSort do
     expect(new_sorted_list.sort_list([1])).to eq([1])
   end
 
-  it "returns [1,2] if array contrains arabic 2, 1" do
+  it "returns [1,2] if array contains arabic 1, 2" do
     new_sorted_list = BubbleSort.new
     expect(new_sorted_list.sort_list([1, 2])).to eq([1, 2])
+  end
+
+  it "returns [1, 2] if array contains arabic 2, 1" do
+    new_sorted_list = BubbleSort.new
+    expect(new_sorted_list.sort_list([2, 1])).to eq([1, 2])
   end
 
 end
