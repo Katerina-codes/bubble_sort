@@ -26,10 +26,11 @@ describe BubbleSort do
     bubble_sort = BubbleSort.new
     expect(bubble_sort.sort_list([3, 1])).to eq([1, 3])
   end
-  # it "returns [1, 2, 3] if array contains arabics 1, 3, 2" do
-  #   new_sorted_list = BubbleSort.new
-  #   expect(new_sorted_list.sort_list([1, 3, 2])).to eq([1, 2, 3])
-  # end
+
+  it "returns [1, 2, 3] if array contains arabics 1, 3, 2" do
+    new_sorted_list = BubbleSort.new
+    expect(new_sorted_list.sort_list([1, 3, 2])).to eq([1, 2, 3])
+  end
   #
   # it "returns [1, 2, 3] if array contains arabics 2, 1, 3" do
   #   new_sorted_list = BubbleSort.new

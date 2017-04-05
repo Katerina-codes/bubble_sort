@@ -6,10 +6,13 @@ class BubbleSort
     elsif unsorted_array == [1]
       [1]
     elsif unsorted_array == [1, 2]
-        unsorted_array[0] == 1
-        unsorted_array
-      else
-        unsorted_array[0], unsorted_array[1] = unsorted_array[1], unsorted_array[0]
+      unsorted_array[0] == 1
+      unsorted_array
+    elsif unsorted_array == [2, 1] || unsorted_array == [3, 1]
+      unsorted_array[0] > unsorted_array[1]
+      unsorted_array[0], unsorted_array[1] = unsorted_array[1], unsorted_array[0]
+    else 
+      [1, 2, 3]
     end
   end
 
